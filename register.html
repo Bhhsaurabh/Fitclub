@@ -1,0 +1,107 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/register.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="register-content">
+            <form action="register_page.html">
+                <h2 class="title">Register</h2>
+
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="ri-map-pin-user-fill"></i>
+                    </div>
+                    <div class="div">
+                        <h5>First Name</h5>
+                        <input type="text" class="input">
+                    </div>
+                </div>
+
+                <div class="input-div email-input">
+                    <div class="i">
+                        <i class="ri-mail-fill"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Email Address</h5>
+                        <input type="email" class="input">
+                    </div>
+                </div>
+
+                <div class="input-div">
+                    <div class="i">
+                        <i class="ri-alarm-fill"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Choose Timing</h5>
+                        <select class="input">
+                            <option value="5-7">5:00 AM - 7:00 AM</option>
+                            <option value="7-9">7:00 AM - 9:00 AM</option>
+                            <option value="9-11">9:00 AM - 11:00 AM</option>
+                            <option value="11-13">11:00 AM - 1:00 PM</option>
+                            <option value="13-15">1:00 PM - 3:00 PM</option>
+                            <option value="15-17">3:00 PM - 5:00 PM</option>
+                            <option value="17-19">5:00 PM - 7:00 PM</option>
+                            <option value="19-21">7:00 PM - 9:00 PM</option>
+                            <option value="21-23">9:00 PM - 10:00 PM</option>>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-div">
+                    <div class="i">
+                        <i class="ri-money-dollar-box-fill"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Choose Plan</h5>
+                        <select class="input">
+                            <option value="1month">1 Month - ₹2000</option>
+                            <option value="6month">6 Months - ₹11000</option>
+                            <option value="12month">12 Months - ₹20000</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-div">
+                    <div class="i">
+                        <i class="ri-credit-card-fill"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Choose Payment Method</h5>
+                        <select class="input" id="payment-method">
+                            <option value="card">Credit/Debit Card</option>
+                            <option value="upi">UPI</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="upi-info" style="display:none;">
+                    <p>Scan the following QR code or make payment to this UPI ID:</p>
+                    <img src="assets/img/upi.jpg" alt="UPI Barcode" width="200px">
+                    <p>6204082367@paytm</p>
+                </div>
+
+                <div id="thank-you-message" style="display:none;">
+                    <h2>Thanks for joining!</h2>
+                    <p>You're now a member of our gym. Get ready to achieve your fitness goals!</p>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" class="input">
+                    <p>By creating an account you agree to our <a href="terms_policy.html">Terms & Privacy</a></p>
+                </div>
+                <input type="submit" class="btn" id="confirm-payment" value="Register">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="./assets/js/register.js"></script>
+</body>
+</html>

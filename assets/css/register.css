@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../img/home-img.png"); /* Replace 'background.jpg' with your desired background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(20px);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-content {
+    width: 350px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-div {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-div .i {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 0;
+    height: 100%;
+    padding: 0 15px;
+    color: #bbb;
+}
+
+.input-div .div {
+    position: relative;
+}
+
+.input-div .div h5 {
+    margin-left: 40px;
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 14px;
+}
+
+.input-div .input {
+    width: 100%;
+    height: 45px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+}
+
+.input-div .input:focus {
+    border-color: #38d39f;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #38d39f, #32be8f, #38d39f);
+}
+
+.check {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.check input {
+    margin-right: 10px;
+}
